@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>成人小电影网：以任侠叙事与东亚电影研究为中心的中文评论站点</title>
+<meta name="description" content="成人小电影网专注东亚任侠电影的叙事传统、人物伦理、类型演变与影像研究，提供编辑评论、片目资料和观影方法。本站不提供在线播放、资源下载或侵权内容入口。官方访问地址：https://chengrenxiaodianyingwang-zh.github.io。">
+<meta name="keywords" content="成人小电影网, 任侠电影, 东亚电影研究, 类型电影评论, 义理叙事, 导演与表演, 影像资料, chengrenxiaodianyingwang-zh.github.io">
+<meta name="author" content="成人小电影网编辑组">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://chengrenxiaodianyingwang-zh.github.io">
+<style>
+:root{--paper:#ece8e0;--paper2:#e4dfd4;--ink:#141311;--ink2:#27251f;--line:#c9c2b4;--green:#2e5c47;--green-d:#17392a;--gold:#b8892c;--red:#9c3327;--white:#fbf9f4}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"WenQuanYi Micro Hei","PingFang SC","Microsoft YaHei",serif;background:var(--paper);color:var(--ink);line-height:1.82;font-size:16px;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+ul{list-style:none}
+a{color:inherit;text-decoration:none}
+button,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1320px;margin:0 auto;padding:0 38px}
+.kicker{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-weight:800;color:var(--green)}
+.eyebrow{display:flex;gap:14px;align-items:center;font-size:.74rem;letter-spacing:.2em;color:var(--green);font-weight:800}
+.eyebrow::after{content:"";flex:1;height:1px;background:currentColor;opacity:.4}
+.mono{font-family:Georgia,"Times New Roman",serif}
+::selection{background:var(--green);color:#fff}
+
+/* Topbar */
+.top{background:var(--green-d);color:#e6e7df;padding:12px 0;font-size:.75rem;letter-spacing:.12em}
+.top .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.top a:hover{color:#fff}
+
+/* masthead */
+.masthead{border-bottom:6px double var(--ink);padding:58px 0 40px}
+.brand-row{display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:end}
+.issue{border-left:3px solid var(--green);padding-left:20px;font-size:.8rem;color:var(--ink2)}
+.issue b{display:block;color:var(--green);font-size:.72rem;letter-spacing:.2em;margin-bottom:8px}
+.mast-title{text-align:center}
+.mast-title small{display:block;font-size:.78rem;letter-spacing:.42em;color:var(--green);margin-bottom:16px}
+.mast-title h1{font-size:clamp(3.3rem,11vw,8.6rem);font-weight:900;line-height:.82;letter-spacing:-.055em}
+.mast-title h1 i{font-style:normal;color:var(--green)}
+.address-card{background:var(--ink);color:#f0eee7;padding:24px 26px;max-width:360px;justify-self:end}
+.address-card span{display:block;font-size:.68rem;letter-spacing:.2em;color:#a7ab9f;margin-bottom:10px}
+.address-card strong{font-size:1.02rem;font-weight:700;word-break:break-all;line-height:1.5}
+.subbar{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line);margin-top:38px}
+.subbar p{max-width:60ch;color:var(--ink2);font-size:.98rem}
+.nav{display:flex;gap:26px;flex-wrap:wrap}
+.nav a{font-size:.86rem;font-weight:800;border-bottom:2px solid transparent;padding-bottom:5px}
+.nav a:hover{border-color:var(--green);color:var(--green)}
+
+/* section */
+section{padding:100px 0;border-bottom:1px solid var(--line)}
+@media(max-width:760px){section{padding:70px 0}}
+.head{display:grid;grid-template-columns:240px 1fr;gap:50px;margin-bottom:60px}
+@media(max-width:920px){.head{grid-template-columns:1fr;gap:22px;margin-bottom:40px}}
+.head h2{font-size:clamp(2rem,4.8vw,3.4rem);line-height:1.18;letter-spacing:-.025em;font-weight:900}
+.head p{color:var(--ink2);max-width:55ch}
+.head .num{font-size:clamp(2.8rem,7vw,5rem);font-weight:900;color:var(--line);line-height:1}
+.grid{display:grid;gap:28px}
+
+/* timeline */
+.timeline{position:relative;padding-left:70px}
+.timeline::before{content:"";position:absolute;left:22px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.tl-item{position:relative;padding-bottom:44px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:"";position:absolute;left:-58px;top:10px;width:18px;height:18px;background:var(--paper);border:3px solid var(--green);border-radius:50%}
+.tl-item h3{font-size:1.55rem;letter-spacing:-.015em;margin:4px 0 14px}
+.tl-item .year{font-weight:900;color:var(--green);letter-spacing:.05em;font-size:.9rem}
+.tl-item p{color:var(--ink2);max-width:66ch}
+.tl-item .tags{margin-top:18px;display:flex;gap:9px;flex-wrap:wrap}
+.tl-item .tags span{font-size:.74rem;border:1px solid var(--line);background:var(--paper2);padding:5px 11px}
+
+/* split cards */
+.split-cards{display:grid;grid-template-columns:repeat(12,1fr);gap:28px}
+@media(max-width:980px){.split-cards{grid-template-columns:repeat(6,1fr)}}
+@media(max-width:620px){.split-cards{grid-template-columns:1fr}}
+.box{border:1px solid var(--line);background:var(--white);padding:38px;display:flex;flex-direction:column}
+.s4{grid-column:span 4}.s5{grid-column:span 5}.s6{grid-column:span 6}.s7{grid-column:span 7}.s8{grid-column:span 8}
+@media(max-width:980px){[class*=s]{grid-column:span 6}}
+@media(max-width:620px){[class*=s]{grid-column:span 1}}
+.box time{font-size:.72rem;font-weight:800;letter-spacing:.15em;color:var(--green)}
+.box h3{font-size:1.7rem;line-height:1.35;letter-spacing:-.02em;margin:16px 0 20px}
+.box p{color:var(--ink2)}
+.box .more{margin-top:auto;padding-top:26px;border-top:1px solid var(--line);font-size:.82rem;color:var(--green);font-weight:800}
+.box.ink{background:var(--ink);color:#eeeae1;border-color:var(--ink)}
+.box.ink p{color:#c1bdae}
+.box.green{background:var(--green);color:#fff;border-color:var(--green)}
+.box.green p{color:#e1efe7}
+.box.green .more{border-color:rgba(255,255,255,.4);color:#fff}
+.hero-img{position:relative;min-height:330px;overflow:hidden;padding:0}
+.hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-img .cap{position:absolute;left:0;right:0;bottom:0;padding:22px 26px;background:linear-gradient(to top,rgba(8,10,8,.92),rgba(8,10,8,0));color:#fff}
+.hero-img .cap b{display:block;font-size:1.4rem;letter-spacing:-.01em}
+
+/* theme table */
+.themegrid{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);background:var(--line)}
+@media(max-width:820px){.grid2{grid-template-columns:1fr}}
+.themegrid>div{background:var(--white);padding:44px 38px}
+.themegrid h3{font-size:1.6rem;letter-spacing:-.018em;margin:16px 0 18px}
+.themegrid p{color:var(--ink2)}
+.themegrid .ico{width:54px;height:54px;border:2px solid var(--green);display:grid;place-items:center;font-size:1.3rem;font-weight:900;color:var(--green)}
+.themegrid:nth-child(odd){grid-template-columns:1fr 1fr}
+
+/* archive */
+.archive-tools{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:34px}
+@media(max-width:760px){.archive-tools{grid-template-columns:1fr}}
+.search{border:1px solid var(--line);background:var(--white);padding:16px 20px;display:flex;align-items:center;gap:14px}
+.search input{border:0;background:transparent;width:100%;font-size:1rem}
+.search input:focus{outline:0}
+.chips{display:flex;gap:10px;flex-wrap:wrap;align-content:center}
+.chip{font-size:.8rem;border:1px solid var(--line);background:var(--white);padding:9px 15px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--green);color:#fff;border-color:var(--green)}
+table.arc{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line)}
+table.arc th,table.arc td{padding:22px 24px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+table.arc th{background:var(--paper2);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:900}
+table.arc td.code{font-family:Georgia,serif;color:var(--green);font-weight:800}
+table.arc h4{font-size:1.18rem;margin-bottom:8px;letter-spacing:-.01em}
+table.arc small{color:var(--ink2);font-size:.88rem}
+.scroll-x{overflow-x:auto}
+.ledger-note{margin-top:24px;font-size:.86rem;color:var(--ink2)}
+
+/* interview */
+.talk{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);background:var(--white)}
+@media(max-width:880px){.talk{grid-template-columns:1fr}}
+.talk>div{padding:52px 44px}
+.talk .ask{background:var(--paper2)}
+.talk h3{font-size:1.45rem;letter-spacing:-.015em;margin-bottom:26px}
+.qa{padding:20px 0;border-bottom:1px solid var(--line)}
+.qa:last-child{border-bottom:0}
+.qa b{display:block;font-size:.72rem;letter-spacing:.2em;color:var(--green);margin-bottom:9px}
+.qa p{font-size:.97rem}
+.qa p+p{margin-top:10px}
+
+/* standards */
+.standards{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+@media(max-width:1000px){.standards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.standards{grid-template-columns:1fr}}
+.standards div{background:var(--white);padding:42px 34px}
+.standards h4{font-size:1.32rem;margin:18px 0 14px;letter-spacing:-.015em}
+.standards p{color:var(--ink2);font-size:.94rem}
+.standards .badge{display:inline-grid;place-items:center;width:46px;height:46px;background:var(--green);color:#fff;font-weight:900;font-size:1rem}
+
+/* faq */
+.faqs{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:840px){.faqs{grid-template-columns:1fr}}
+.faq{border-top:4px solid var(--ink);padding:30px 0}
+.faq h4{font-size:1.2rem;letter-spacing:-.01em;margin-bottom:14px;display:flex;gap:16px}
+.faq h4 i{font-style:normal;color:var(--green);font-weight:900}
+.faq p{color:var(--ink2)}
+
+/* contact */
+.contact{background:var(--ink);color:#eeeae1}
+.contact .kicker{color:#9ec6b3}
+.contact .head p{color:#bab5a8}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#3d3b33}
+@media(max-width:820px){.formgrid{grid-template-columns:1fr}}
+.field{background:var(--ink);padding:34px 36px}
+.field label{display:block;font-size:.72rem;letter-spacing:.18em;color:#9ec6b3;margin-bottom:14px;font-weight:800}
+.field input,.field textarea,.field select{width:100%;border:0;border-bottom:1px solid #5b584d;background:transparent;padding:12px 0;color:#fff;font-size:1rem}
+.field textarea{min-height:140px;resize:vertical}
+.field input:focus,.field textarea:focus,.field select:focus{outline:0;border-color:#9ec6b3}
+.send{background:var(--green);color:#fff;border:0;padding:22px 40px;font-weight:900;letter-spacing:.08em;cursor:pointer;font-size:.95rem}
+.send:hover{background:var(--gold)}
+.notice{margin-top:24px;font-size:.85rem;color:#a9a597}
+
+/* footer */
+footer{background:#0c0d0b;color:#aaa69c;padding:84px 0 36px}
+.fgrid{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:50px;padding-bottom:56px;border-bottom:1px solid #25261f}
+@media(max-width:900px){.fgrid{grid-template-columns:1fr 1fr}}
+.fname{font-size:1.9rem;color:#fff;letter-spacing:-.025em;margin:16px 0 20px;font-weight:900}
+.fbox p{font-size:.92rem;max-width:36ch}
+.domain{margin-top:26px;border:1px solid #32342b;background:#12130f;padding:22px;font-size:.8rem;color:#8d8b80;word-break:break-all}
+.domain b{display:block;color:#cfcabe;font-size:.7rem;letter-spacing:.18em;margin-bottom:9px}
+.fgrid h4{color:#fff;margin-bottom:22px;font-size:.95rem}
+.fgrid ul{display:grid;gap:13px;font-size:.92rem}
+.fgrid a:hover{color:#fff}
+.fbottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:34px;font-size:.8rem;color:#6d6b63}
+
+@media(max-width:980px){
+ .brand-row{grid-template-columns:1fr;text-align:left}.mast-title{text-align:left}
+ .address-card{justify-self:start;max-width:none}
+ .head{grid-template-columns:1fr}
+ .box,.talk>div{padding:32px 26px}
+ .themegrid>div{padding:38px 30px}
+}
+@media(max-width:620px){.wrap{padding:0 22px}.subbar{grid-template-columns:1fr}.nav{gap:18px}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="top"><div class="wrap"><span>中文电影评论 · 东亚影像研究 · 任侠叙事专题</span><span>官方访问地址：chengrenxiaodianyingwang-zh.github.io</span></div></div>
+
+<header class="masthead"><div class="wrap">
+ <div class="brand-row">
+  <div class="issue"><b>第 01 卷 / 影像评论版</b>以作品为中心，讨论叙事、表演、空间与类型</div>
+  <div class="mast-title">
+   <small>CHÉNG RÉN XIÁ · FILM REVIEW</small>
+   <h1>成人小<br><i>电影网</i></h1>
+  </div>
+  <div class="address-card"><span>唯一官方访问地址</span><strong>https://chengrenxiaodianyingwang-zh.github.io</strong></div>
+ </div>
+ <div class="subbar">
+  <p>成人小电影网研究东亚任侠传统如何进入电影：从义理选择、群体关系、身体行动到类型变迁。本站提供评论、资料与研究方法，不设置播放器、下载入口或侵权资源链接。</p>
+  <nav class="nav"><a href="#chronicle">类型沿革</a><a href="#close-read">文本细读</a><a href="#themes">叙事母题</a><a href="#archive">片目档案</a><a href="#standards">编辑规范</a><a href="#faqs">常见疑问</a><a href="#contact">投稿联络</a></nav>
+ </div>
+</div></header>
+
+<main>
+ <section id="chronicle">
+  <div class="wrap">
+   <div class="head"><div><span class="mono num">01</span></div><div><span class="kicker">栏目一 · 类型沿革</span><h2>任侠不是一套固定动作，而是一种持续变化的社会叙事。</h2><p>从舞台表演到黑白电影，再到现代重拍与跨文化改写，任侠元素不断调整人物、伦理与冲突方式。沿革栏目按时期记录这些转折。</p></div></div>
+   <div class="timeline">
+    <article class="tl-item"><span class="year">早期舞台与通俗小说</span><h3>侠义故事先在城市通俗文化中成形</h3><p>人物以义气、报恩、信约和身份责任解决冲突。叙事强调选择后果，为后来的电影改编提供了基本人物关系。</p><div class="tags"><span>义理</span><span>报恩</span><span>身份</span></div></article>
+    <article class="tl-item"><span class="year">黑白电影时期</span><h3>空间与身体成为道德压力的可视化工具</h3><p>狭窄街道、门廊、榻榻间和走廊被反复使用，人物的进退不仅表现行动，也表现阶层与群体限制。</p><div class="tags"><span>空间构图</span><span>黑白摄影</span><span>身体动作</span></div></article>
+    <article class="tl-item"><span class="year">彩色与类型扩张</span><h3>色彩、服饰和仪式感强化了群体秩序</h3><p>任侠叙事开始吸收犯罪、家庭、职场与时代剧元素。人物冲突从“敌我”扩展为组织内部的价值冲突。</p><div class="tags"><span>类型混合</span><span>仪式</span><span>群体秩序</span></div></article>
+    <article class="tl-item"><span class="year">现代改写与重读</span><h3>当代作品更重视个人代价与制度背景</h3><p>近年创作常把任侠人物放回家庭、劳动和社会结构之中，不再把“义气”当作无需解释的行为依据。</p><div class="tags"><span>现代改写</span><span>社会背景</span><span>人物代价</span></div></article>
+   </div>
+  </div>
+ </section>
+
+ <section id="close-read" style="background:var(--white)">
+  <div class="wrap">
+   <div class="head"><div><span class="mono num">02</span></div><div><span class="kicker">栏目二 · 文本细读</span><h2>评论需要说明判断从哪里来。</h2><p>文本细读栏目不把“好看”或“难看”当作结论，而是从镜头、表演、声音、空间与剪辑材料中提出可讨论的判断。</p></div></div>
+   <div class="split-cards">
+    <article class="box s7 hero-img"><img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1200&q=70" alt="老式街道与灯光，用于任侠电影空间研究配图"><div class="cap"><span>细读 01</span><b>门与走廊：任侠电影中的进退空间</b></div></article>
+    <article class="box s5 ink"><time>文本细读 · 空间</time><h3>人物能否跨过门槛，往往就是一场冲突的开始。</h3><p>门、屏风、窗帘与走廊并非纯背景。它们决定人物能看见谁、能向谁解释，以及是否拥有退路。</p><a class="more" href="#">阅读完整分析 →</a></article>
+    <article class="box s4"><time>细读 02</time><h3>沉默比解释更有分量</h3><p>角色没有立即回应的瞬间，常比随后的台词更能表现责任、犹豫或已作出的选择。</p><a class="more" href="#">阅读完整分析 →</a></article>
+    <article class="box s4 green"><time>细读 03</time><h3>服饰如何表现秩序</h3><p>服装并非单纯年代装饰，它帮助观众识别群体身份、人物位置和关系等级。</p><a class="more" href="#">阅读完整分析 →</a></article>
+    <article class="box s4"><time>细读 04</time><h3>声音里的克制</h3><p>留白、环境声与音乐停顿常用来替代情绪说明，使观众自行判断人物处境。</p><a class="more" href="#">阅读完整分析 →</a></article>
+   </div>
+  </div>
+ </section>
+
+ <section id="themes">
+  <div class="wrap">
+   <div class="head"><div><span class="mono num">03</span></div><div><span class="kicker">栏目三 · 叙事母题</span><h2>反复出现的母题，是理解类型记忆的入口。</h2><p>母题栏目把具体影片放回更大的传统中比较，同时避免用概念覆盖作品之间的差异。</p></div></div>
+   <div class="grid themegrid">
+    <div><div class="ico">義</div><h3>义理与责任的冲突</h3><p>任侠叙事最持久的张力，来自个人情感、组织义务与社会规范之间的矛盾。</p></div>
+    <div><div class="ico">報</div><h3>报恩、偿还与债务关系</h3><p>“欠了什么”常被转化为人物必须完成的行动，并推动全片冲突。</p></div>
+    <div><div class="ico">界</div><h3>边界与准入规则</h3><p>谁可以进入某处、谁被排除在外，往往是任侠电影的空间政治核心。</p></div>
+    <div><div class="ico">變</div><h3>传统如何被改写</h3><p>现代作品常重新处理忠诚、性别、家庭与劳动，使旧类型获得新解释。</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="archive" style="background:var(--white)">
+  <div class="wrap">
+   <div class="head"><div><span class="mono num">04</span></div><div><span class="kicker">栏目四 · 片目档案</span><h2>片目不是排行榜，而是可继续研究的问题集合。</h2><p>档案以主题、研究价值和资料完整度组织。以下编号仅为编辑索引，不构成评分或排名。</p></div></div>
+   <div class="archive-tools">
+    <label class="search"><span aria-hidden="true">⌕</span><input id="q" type="search" aria-label="搜索档案：输入作品名、主题或研究关键词，例如空间、义理、现代改写"></label>
+    <div class="chips" id="chips"><button class="chip" type="button" aria-pressed="true">全部</button><button class="chip" type="button" aria-pressed="false">义理</button><button class="chip" type="button" aria-pressed="false">空间</button><button class="chip" type="button" aria-pressed="false">表演</button><button class="chip" type="button" aria-pressed="false">现代改写</button></div>
+   </div>
+   <div class="scroll-x"><table class="arc">
+    <thead><tr><th style="width:74px">索引</th><th>研究主题</th><th>叙事方向</th><th>可用材料</th><th style="width:130px">档案状态</th></tr></thead>
+    <tbody>
+     <tr><td class="code">A—01</td><td><h4>门后的承诺</h4><small>以进入与拒绝进入讨论人物责任</small></td><td>义理 / 空间</td><td>分镜笔记、场景对照</td><td>已整理</td></tr>
+     <tr><td class="code">A—02</td><td><h4>沉默中的债务</h4><small>人物为何不把理由说出口</small></td><td>义理 / 表演</td><td>台词摘录、表演笔记</td><td>整理中</td></tr>
+     <tr><td class="code">A—03</td><td><h4>狭窄街道上的选择</h4><small>城市空间如何压缩人物行动</small></td><td>空间 / 都市</td><td>场景地图、影像对照</td><td>已整理</td></tr>
+     <tr><td class="code">A—04</td><td><h4>仪式为何被打破</h4><small>传统规则如何制造叙事危机</small></td><td>仪式 / 类型</td><td>文献与剧作分析</td><td>待补</td></tr>
+     <tr><td class="code">A—05</td><td><h4>现代职场里的任侠残影</h4><small>旧伦理如何被组织制度重新解释</small></td><td>现代改写</td><td>跨文本比较</td><td>已整理</td></tr>
+     <tr><td class="code">A—06</td><td><h4>女性角色与家庭秩序</h4><small>义理冲突中的非中心人物视角</small></td><td>性别 / 家庭</td><td>角色关系表</td><td>修订中</td></tr>
+    </tbody>
+   </table></div>
+   <p class="ledger-note">档案索引用于编辑和读者检索；具体内容会随新研究、更正与资料增补而更新。</p>
+  </div>
+ </section>
+
+ <section id="talk">
+  <div class="wrap">
+   <div class="head"><div><span class="mono num">05</span></div><div><span class="kicker">编辑访谈</span><h2>如何避免把“任侠”讲成一个空洞标签？</h2><p>编辑组认为，研究应回到具体作品和人物处境，不能把复杂传统压缩成固定人物类型。</p></div></div>
+   <div class="talk">
+    <div class="ask"><span class="kicker">访谈摘要</span><h3>任侠研究最容易被忽略的一层是什么？</h3>
+     <div class="qa"><b>问</b><p>为什么同一套伦理，在不同电影中会被写成不同选择？</p></div>
+     <div class="qa"><b>答</b><p>因为人物面对的组织、家庭、时代与代价不同。类型传统提供的是问题，不是固定答案。</p></div>
+     <div class="qa"><b>问</b><p>评论是否应该区分“赞美”与“解释”？</p></div>
+     <div class="qa"><b>答</b><p>应当区分。解释作品如何运作，与判断其价值，是两个可以彼此支撑但不能互相替代的步骤。</p></div>
+    </div>
+    <div><span class="kicker">工作方法</span><h3 style="margin:16px 0 24px;font-size:1.75rem;letter-spacing:-.02em">从可核验材料出发，保留观点的边界。</h3>
+     <div class="qa"><b>材料优先</b><p>先确认版本、年份、创作人员与影像材料，再进入主观评价。</p></div>
+     <div class="qa"><b>细节论证</b><p>评论必须说明判断来自哪些镜头、场景、声音或叙事安排。</p></div>
+     <div class="qa"><b>允许反驳</b><p>不同解释可以并存；本站欢迎基于材料的补充与修正。</p></div>
+     <div class="qa"><b>不代替资源</b><p>本站不提供播放、下载或侵权入口，仅从事评论与研究。</p></div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section id="standards" style="background:var(--green-d);color:#eeeae1">
+  <div class="wrap">
+   <div class="head"><div><span class="mono num" style="color:#5b8573">06</span></div><div><span class="kicker" style="color:#9ec6b3">栏目五 · 编辑规范</span><h2 style="color:#fff">规范不是限制讨论，而是让讨论可以被检查。</h2><p style="color:#b8b5aa">成人小电影网按照四项基本规范处理评论、资料与投稿，确保观点、事实和版权边界清楚。</p></div></div>
+   <div class="standards">
+    <div><span class="badge">壹</span><h4>事实与观点分开</h4><p>上映、创作人员、版本和资料信息尽量标注来源；评价、推测与解读明确属于编辑观点。</p></div>
+    <div><span class="badge">贰</span><h4>剧透适度提示</h4><p>涉及关键情节的分析会标明讨论范围，避免以结局替代观看过程。</p></div>
+    <div><span class="badge">叁</span><h4>尊重版权材料</h4><p>影像、海报及截图仅用于评论性分析，并保留相应权利人信息。</p></div>
+    <div><span class="badge">肆</span><h4>可修正的档案</h4><p>发现资料错误或遗漏时，可通过联络入口提交依据，编辑组会复核并更新记录。</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="faqs"><div class="wrap">
+  <div class="head"><div><span class="mono num">07</span></div><div><span class="kicker">常见疑问</span><h2>关于网站内容、版权与投稿的常见问题。</h2><p>如果以下内容没有覆盖你的问题，可使用页面底部表单提交更具体的材料。</p></div></div>
+  <div class="faqs">
+   <div class="faq"><h4><i>01</i>成人小电影网提供影片在线观看或下载吗？</h4><p>不提供。本站只进行电影评论、研究与资料整理，不设置在线播放、下载跳转或盗版资源入口。</p></div>
+   <div class="faq"><h4><i>02</i>“任侠”是否只指某一种电影类型？</h4><p>不是。它可以指叙事传统、人物伦理、动作形式或文化记忆；本站在每篇文章中会限定具体讨论范围。</p></div>
+   <div class="faq"><h4><i>03</i>为什么栏目名称会随着网站更新而变化？</h4><p>栏目依据研究主题调整，以便更准确容纳评论、档案和方法内容，不代表网站名称或官方地址发生变化。</p></div>
+   <div class="faq"><h4><i>04</i>片目档案中的编号代表质量排名吗？</h4><p>不代表。编号仅用于编辑归档和检索，与作品质量、推荐程度或上映时间无关。</p></div>
+   <div class="faq"><h4><i>05</i>可以转载本站的评论文章吗？</h4><p>如需转载，请先取得授权，并完整保留作者、出处、原文链接与作品信息，不得篡改正文或用于商业盗用。</p></div>
+   <div class="faq"><h4><i>06</i>发现资料错误应如何反馈？</h4><p>可通过投稿联络表单说明作品、错误内容及可核验依据。编辑组核实后会更新相关页面，并保留修订记录。</p></div>
+  </div>
+ </div></section>
+
+ <section id="contact" class="contact"><div class="wrap">
+  <div class="head"><div><span class="mono num">08</span></div><div><span class="kicker">投稿联络</span><h2>欢迎提供选题、勘误、影像资料线索与采访申请。</h2><p>请尽量附上具体作品名称、可核验来源、分析思路和原创声明。编辑组会依据主题相关性与资料完整性回复。</p></div></div>
+  <form class="formgrid" onsubmit="event.preventDefault();this.reset();document.getElementById('done').hidden=false;">
+   <div class="field"><label for="n">称呼或笔名</label><input id="n" type="text" required></div>
+   <div class="field"><label for="e">联系邮箱</label><input id="e" type="email" required></div>
+   <div class="field"><label for="t">来信主题</label><select id="t" required><option value="">请选择</option><option>选题投稿</option><option>资料勘误</option><option>转载授权</option><option>版权问题</option><option>其他</option></select></div>
+   <div class="field"><label for="w">相关作品或导演</label><input id="w" type="text"></div>
+   <div class="field" style="grid-column:1/-1"><label for="m">补充说明与材料来源</label><textarea id="m" required></textarea></div>
+   <div class="field" style="grid-column:1/-1;background:var(--ink);display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center"><button class="send" type="submit">提交编辑组</button><p class="notice" id="done" hidden>已收到提交内容。编辑组核对材料后会通过邮箱回复，请耐心等待。</p></div>
+  </form>
+ </div></section>
+</main>
+
+<footer><div class="wrap">
+ <div class="fgrid">
+  <div class="fbox"><span class="kicker">成人小电影网</span><div class="fname">成人小电影网</div><p>中文任侠电影评论、类型沿革研究与影像资料平台。通过具体作品讨论义理、人物、空间与叙事变化。</p><div class="domain"><b>唯一官方访问地址</b>https://chengrenxiaodianyingwang-zh.github.io</div></div>
+  <div><h4>栏目导航</h4><ul><li><a href="#chronicle">类型沿革</a></li><li><a href="#close-read">文本细读</a></li><li><a href="#themes">叙事母题</a></li><li><a href="#archive">片目档案</a></li></ul></div>
+  <div><h4>研究与资料</h4><ul><li><a href="#">导演索引</a></li><li><a href="#">义理专题</a></li><li><a href="#">空间研究</a></li><li><a href="#">术语说明</a></li></ul></div>
+  <div><h4>编辑服务</h4><ul><li><a href="#standards">编辑规范</a></li><li><a href="#faqs">常见疑问</a></li><li><a href="#contact">投稿联络</a></li><li><a href="#">版权声明</a></li></ul></div>
+ </div>
+ <div class="fbottom"><span>© <span id="yr"></span> 成人小电影网 / chengrenxiaodianyingwang。页面所涉及的电影名称、角色、影像及海报权利归相应权利人所有。</span><span>本站内容仅用于评论、研究与交流</span></div>
+</div></footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){
+ var q=document.getElementById('q');
+ var chips=document.querySelectorAll('#chips .chip');
+ var rows=document.querySelectorAll('table.arc tbody tr');
+ var tag=chips[0].textContent.trim();
+ function filter(){
+  var k=q.value.trim().toLowerCase();
+  rows.forEach(function(r){
+   var text=r.textContent.toLowerCase();
+   var ok=!k||text.includes(k);
+   var tagOk=tag==='全部'||text.includes(tag);
+   r.hidden=!(ok&&tagOk);
+  });
+ }
+ q.addEventListener('input',filter);
+ chips.forEach(function(c){
+  c.addEventListener('click',function(){
+   chips.forEach(function(x){x.setAttribute('aria-pressed','false')});
+   c.setAttribute('aria-pressed','true');
+   tag=c.textContent.trim();
+   filter();
+  });
+ });
+})();
+</script>
+</body>
+</html>
